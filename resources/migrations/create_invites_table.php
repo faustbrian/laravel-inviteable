@@ -11,9 +11,6 @@ use Illuminate\Database\Migrations\Migration;
  */
 class CreateInvitesTable extends Migration
 {
-    /**
-     *
-     */
     public function up()
     {
         Schema::create('invites', function (Blueprint $table) {
@@ -27,9 +24,6 @@ class CreateInvitesTable extends Migration
         });
     }
 
-    /**
-     *
-     */
     public function down()
     {
         Schema::dropIfExists('invites');
