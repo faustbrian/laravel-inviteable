@@ -9,17 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace DraperStudio\Inviteable\Contracts;
+namespace DraperStudio\Tests\Inviteable;
+
+use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
 /**
- * Interface Inviteable.
+ * This is the service provider test class.
  *
  * @author DraperStudio <hello@draperstudio.tech>
  */
-interface Inviteable
+class ServiceProviderTest extends AbstractTestCase
 {
-    /**
-     * @return mixed
-     */
-    public function invite();
+    use ServiceProviderTrait;
 }
