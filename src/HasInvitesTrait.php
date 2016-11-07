@@ -2,9 +2,9 @@
 
 namespace BrianFaust\Inviteable\Traits;
 
-use BrianFaust\Inviteable\Models\Invite;
+use BrianFaust\Inviteable\Invite;
 
-trait Inviteable
+trait HasInvitesTrait
 {
     /**
      * @return mixed

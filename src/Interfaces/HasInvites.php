@@ -1,8 +1,8 @@
 <?php
 
-namespace BrianFaust\Inviteable\Contracts;
+namespace BrianFaust\Inviteable\Interfaces;
 
-interface Inviteable
+interface HasInvites
 {
     /**
      * @return mixed

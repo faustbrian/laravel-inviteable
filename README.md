@@ -31,13 +31,13 @@ php artisan vendor:publish --provider="BrianFaust\Inviteable\ServiceProvider" &&
 
 namespace App;
 
-use BrianFaust\Inviteable\Contracts\Inviteable;
-use BrianFaust\Inviteable\Traits\Inviteable as InviteableTrait;
+use BrianFaust\Inviteable\HasInvitesTrait;
+use BrianFaust\Inviteable\Interfaces\HasInvites;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model implements Inviteable
+class User extends Model implements HasInvites
 {
-    use InviteableTrait;
+    use HasInvitesTrait;
 }
 ```
 

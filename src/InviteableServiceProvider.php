@@ -2,7 +2,9 @@
 
 namespace BrianFaust\Inviteable;
 
-class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
+use BrianFaust\ServiceProvider\ServiceProvider;
+
+class InviteableServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

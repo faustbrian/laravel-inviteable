@@ -1,6 +1,6 @@
 <?php
 
-namespace BrianFaust\Inviteable\Models;
+namespace BrianFaust\Inviteable;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
