@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Laravel Inviteable.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Inviteable;
 
 use Carbon\Carbon;
@@ -44,7 +53,7 @@ class Invite extends Model
      */
     public function claimed()
     {
-        return !empty($this->claimed_at);
+        return ! empty($this->claimed_at);
     }
 
     /**
