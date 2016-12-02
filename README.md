@@ -11,9 +11,7 @@ $ composer require faustbrian/laravel-inviteable
 And then include the service provider within `app/config/app.php`.
 
 ``` php
-'providers' => [
-    BrianFaust\Inviteable\InviteableServiceProvider::class
-];
+BrianFaust\Inviteable\InviteableServiceProvider::class
 ```
 
 To get started, you'll need to publish the vendor assets and migrate:
