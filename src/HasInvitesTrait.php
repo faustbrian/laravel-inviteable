@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Inviteable\Traits;
 
 use BrianFaust\Inviteable\Invite;
