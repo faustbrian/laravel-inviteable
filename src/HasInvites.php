@@ -11,12 +11,17 @@
 
 declare(strict_types=1);
 
-namespace BrianFaust\Inviteable\Interfaces;
+namespace BrianFaust\Inviteable\Traits;
 
-interface HasInvites
+use BrianFaust\Inviteable\Invite;
+
+trait HasInvites
 {
     /**
      * @return mixed
      */
-    public function invite();
+    public function invite()
+    {
+        return $this->morphOne(Invite::class, 'claimer');
+    }
 }
