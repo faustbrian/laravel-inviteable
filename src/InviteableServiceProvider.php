@@ -22,9 +22,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\Inviteable;
 
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 
-class InviteableServiceProvider extends ServiceProvider
+class InviteableServiceProvider extends AbstractServiceProvider
 {
     /**
      * Bootstrap the application services.
