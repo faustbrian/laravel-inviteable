@@ -24,6 +24,7 @@ namespace BrianFaust\Inviteable;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Invite extends Model
 {
@@ -40,7 +41,7 @@ class Invite extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function claimer()
+    public function claimer(): MorphTo
     {
         return $this->morphTo();
     }
@@ -50,19 +51,18 @@ class Invite extends Model
      *
      * @return Model
      */
-    public function claim(Model $claimer)
+    public function claim(Model $claimer): bool
     {
         $this->claimer()->associate($claimer);
         $this->claimed_at = Carbon::now();
-        $this->save();
 
-        return $claimer;
+        return (bool) $this->save();
     }
 
     /**
      * @return bool
      */
-    public function claimed()
+    public function claimed(): bool
     {
         return !empty($this->claimed_at);
     }
@@ -72,7 +72,7 @@ class Invite extends Model
      *
      * @return static
      */
-    public static function getNewCode($data)
+    public static function getNewCode($data): self
     {
         $data['code'] = bin2hex(openssl_random_pseudo_bytes(16));
 
@@ -84,7 +84,7 @@ class Invite extends Model
      *
      * @return mixed
      */
-    public static function getInviteByCode($code)
+    public static function getInviteByCode($code): self
     {
         return static::where('code', '=', $code)->first();
     }
@@ -94,7 +94,7 @@ class Invite extends Model
      *
      * @return mixed
      */
-    public static function getValidInviteByCode($code)
+    public static function getValidInviteByCode($code): self
     {
         return static::where('code', '=', $code)
                     ->where('claimed_at', '=', null)
