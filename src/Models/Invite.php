@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Inviteable.
  *
@@ -12,7 +9,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Inviteable;
+namespace BrianFaust\Inviteable\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;

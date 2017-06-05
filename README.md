@@ -10,12 +10,6 @@ Require this package, with [Composer](https://getcomposer.org/), in the root dir
 $ composer require faustbrian/laravel-inviteable
 ```
 
-And then include the service provider within `app/config/app.php`.
-
-``` php
-BrianFaust\Inviteable\InviteableServiceProvider::class
-```
-
 To get started, you'll need to publish the vendor assets and migrate:
 
 ```
@@ -81,19 +75,11 @@ dump($invite->claimer);
 dump($user->invite);
 ```
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
 ## Testing
 
 ``` bash
 $ phpunit
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
