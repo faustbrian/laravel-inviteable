@@ -55,7 +55,7 @@ class Invite extends Model
      */
     public function claimed(): bool
     {
-        return ! empty($this->claimed_at);
+        return !empty($this->claimed_at);
     }
 
     /**
