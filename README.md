@@ -1,22 +1,22 @@
 # Laravel Inviteable
 
-[![Build Status](https://img.shields.io/travis/faustbrian/Laravel-Inviteable/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Laravel-Inviteable)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/laravel-inviteable.svg?style=flat-square)]()
-[![Latest Version](https://img.shields.io/github/release/faustbrian/Laravel-Inviteable.svg?style=flat-square)](https://github.com/faustbrian/Laravel-Inviteable/releases)
-[![License](https://img.shields.io/packagist/l/faustbrian/Laravel-Inviteable.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Laravel-Inviteable)
+[![Build Status](https://img.shields.io/travis/artisanry/Inviteable/master.svg?style=flat-square)](https://travis-ci.org/artisanry/Inviteable)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/artisanry/inviteable.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/artisanry/Inviteable.svg?style=flat-square)](https://github.com/artisanry/Inviteable/releases)
+[![License](https://img.shields.io/packagist/l/artisanry/Inviteable.svg?style=flat-square)](https://packagist.org/packages/artisanry/Inviteable)
 
 ## Installation
 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ``` bash
-$ composer require faustbrian/laravel-inviteable
+$ composer require artisanry/inviteable
 ```
 
 To get started, you'll need to publish the vendor assets and migrate:
 
 ```
-php artisan vendor:publish --provider="BrianFaust\Inviteable\InviteableServiceProvider" && php artisan migrate
+php artisan vendor:publish --provider="Artisanry\Inviteable\InviteableServiceProvider" && php artisan migrate
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ php artisan vendor:publish --provider="BrianFaust\Inviteable\InviteableServicePr
 
 namespace App;
 
-use BrianFaust\Inviteable\HasInvites;
+use Artisanry\Inviteable\HasInvites;
 use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
@@ -86,7 +86,7 @@ $ phpunit
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@basecode.sh. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -95,4 +95,4 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](LICENSE) © [Brian Faust](https://brianfaust.me)
+[MIT](LICENSE) © [Brian Faust](https://basecode.sh)

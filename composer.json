@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-inviteable",
+    "name": "artisanry/inviteable",
     "description": "Inviteable Polymorphic Eloquent Models for Laravel 5",
-    "keywords": ["laravel", "framework", "Laravel-Inviteable", "Laravel Inviteable", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Inviteable", "Laravel Inviteable"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Inviteable\\": "src/"
+            "Artisanry\\Inviteable\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Inviteable\\": "tests"
+            "Artisanry\\Tests\\Inviteable\\": "tests"
         }
     },
     "config": {
@@ -39,7 +39,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Inviteable\\InviteableServiceProvider"
+                "Artisanry\\Inviteable\\InviteableServiceProvider"
             ]
         }
     },
